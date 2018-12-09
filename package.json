@@ -1,9 +1,8 @@
 {
-  "name": "Nisum App",
-  "description": "Diplays the products",
+  "name": "NisumApp",
+  "description": "Displays the products",
   "version": "1.0.0",
   "devDependencies": {
-    "cors-server": "^1.0.4",
     "http-server": "^0.11.1"
   }
 }

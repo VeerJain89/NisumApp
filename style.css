@@ -7,14 +7,10 @@
 }
 .product-container .product-row {
 	margin-top: 35px;
-	display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 .product-container .product-area {
     width: 380px;
-    min-width: 385px;
+    min-width: 380px;
     min-height: 470px;
     height: 470px;
 }
@@ -26,8 +22,6 @@
 .product-container .product-rec img {
 	height: 363px;
 	width: 363px;
-	object-fit: cover;
-	object-position: center;
 }
 .product-container .product-des {
 	display: flex;
@@ -50,4 +44,8 @@
 }
 #productModal .modal-dialog .modal-content {
 	width: 100%;
+}
+
+#productGallery a {
+	background: rgba(0, 0, 0, 0.5);
 }

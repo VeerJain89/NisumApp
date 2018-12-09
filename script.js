@@ -2,7 +2,7 @@ function createCarouselItems(carouselItems) {
 	let carouselControl = $(".carousel-inner").empty();
 	let carouselIndicators = $(".carousel-indicators").empty();
 	for(let i = carouselItems.length-1; i>=0; i--) {
-		carouselIndicators.append($('<li data-target="#productGallery" data-slide-to='+i+'></li>'));
+		carouselIndicators.prepend($('<li data-target="#productGallery" data-slide-to='+i+'></li>').addClass(i===1 && "active"));
 		let itemDiv = $('<div class="carousel-item"></div>').addClass(i===1 && "active");
 		itemDiv.append($('<img src='+carouselItems[i].href+'></img>'));
 		carouselControl.prepend(itemDiv);
@@ -39,11 +39,11 @@ function init() {
 	xhr.onreadystatechange = function() {
 	    if (this.readyState == 4 && this.status == 200) {
 	    	let responseText = JSON.parse(xhr.responseText);
-	    	$(".product-title").text(responseText.name);
+	    	$(".product-title").text("Towels - " + responseText.name);
 		    createProductDetail(responseText.groups);
 	    }
 	};
-	xhr.open("GET", "http://localhost:8090/https://www.westelm.com/services/catalog/v4/category/shop/new/all-new/index.json");
+	xhr.open("GET", "index.json");
 	xhr.send();
 }
 
