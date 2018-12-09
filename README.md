@@ -6,6 +6,6 @@ To run the project one must perform below steps:
 2. http-server ./ -p 8080
 3. cors-server 8090
 
-First step will install the npm module dependencies of the project.
-Second step will install http-server, a way to run the project on localhost at port 8080
-Third step will install the cors server to fix the cors issues.
+- First step will install the npm module dependencies of the project. 
+- Second step will install http-server, a way to run the project on localhost at port 8080.
+- Third step will install the cors server to fix the cors issues.
